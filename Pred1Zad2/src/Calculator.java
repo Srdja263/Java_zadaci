@@ -28,7 +28,12 @@ public class Calculator {
     		 result=num1*num2;
     		 break;
     	 case 'd':
-    		 result=num1/num2;
+             if (num2!=0){
+                 result=num1/num2;
+             }else {
+                System.out.println("Deljenje sa nulom nije dozvoljeno");
+                    return;
+             }
     	     break;
     	     default:
     	    	 System.out.println("Uneli ste pogresan kod");
